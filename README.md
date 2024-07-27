@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-# chatty_app
-=======
-# chat_app
+# Chatty
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 63db072 (initial commit)
+- Chat App Built By Flutter
+- use flutterfire cli to add your firebase project to the app before using
+- I need to give some credits to Mr.Tharwat Samy as he is my instructor.
+- If you liked the app please star this repo.
+- I am new flutter developer so pls support me.
+### Thanks
+#### Ahmed Elessawy
