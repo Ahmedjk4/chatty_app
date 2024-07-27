@@ -55,7 +55,8 @@ class ChangeNameScreen extends StatelessWidget {
                   } else if (!controller.text.startsWithCapitalLetter()) {
                     showSnackBar(context, 'Start With Capital Letter');
                   }
-                }),
+                },
+            ),
           ],
         ),
       )),
