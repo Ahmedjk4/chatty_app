@@ -1,0 +1,61 @@
+Chatty License
+
+August 2024
+
+1. Definitions
+
+"App" refers to the Application named "Chatty" created by Ahmedjk4.
+
+"Owner" refers to Ahmedjk4, the creator of the App.
+
+"Contributor" refers to any individual or entity who submits a pull request or modifications to the App.
+2. Rights and Restrictions
+2.1 Ownership and Credits
+
+    The Owner retains full ownership of the App.
+    All users and contributors must provide full credit to the Owner in any distributions, derivatives, or usage of the App.
+
+2.2 Distribution
+
+    Unauthorized distribution of the App, including its source code, binaries, and any modified versions, is strictly prohibited.
+    Distribution is only allowed with the explicit written permission of the Owner.
+
+2.3 Modification and Contributions
+
+    Contributors are allowed to make modifications and improvements to the App.
+    All modifications must be submitted as pull requests to the original repository.
+    The Owner has the sole discretion to accept or reject any pull requests.
+
+2.4 Usage
+
+    Users are allowed to use the App for personal and educational purposes.
+    Commercial use of the App is prohibited without explicit written permission from the Owner.
+
+2.5 Liability
+
+    The App is provided "as-is" without any warranties of any kind. The Owner is not liable for any damages arising from the use of the App.
+
+3. Pull Requests and Contributions
+3.1 Submission
+
+    Contributors must submit pull requests to the original repository on GitHub (or other version control system) designated by the Owner.
+
+3.2 Review Process
+
+    The Owner will review all submitted pull requests.
+    Contributors must provide a detailed description of changes and the purpose of the modifications.
+
+3.3 Attribution
+
+    All accepted contributions will be attributed to the respective contributors in the App's documentation and changelog.
+
+4. Enforcement
+4.1 Violations
+
+    Any violation of this license will result in the immediate termination of the violator's rights to use, modify, and distribute the App.
+
+4.2 Legal Actions
+
+    The Owner reserves the right to take legal action against any individual or entity that violates this license.
+
+By using or contributing to the App, you agree to be bound by the terms of this license.
