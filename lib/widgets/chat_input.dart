@@ -32,8 +32,11 @@ class ChatInput extends StatelessWidget {
           ),
           IconButton.filled(
             onPressed: () {
-              BlocProvider.of<ChatCubit>(context).sendMessage(controller.text);
-              controller.clear();
+              if (controller.text.isNotEmpty) {
+                BlocProvider.of<ChatCubit>(context)
+                    .sendMessage(controller.text);
+                controller.clear();
+              }
             },
             icon: const Icon(Icons.send),
           ),
