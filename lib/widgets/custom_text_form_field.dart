@@ -30,42 +30,47 @@ class _CustomTextFieldState extends State<CustomTextField> {
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
         validator: (value) {
-          if (value == null || value.isEmpty) {
-            setState(() {
-              _labelColor = Colors.red;
-              _autoValidateMode = AutovalidateMode.always;
-            });
+          Future.delayed(
+            Duration.zero,
+            () async {
+              if (value == null || value.isEmpty) {
+                setState(() {
+                  _labelColor = Colors.red;
+                  _autoValidateMode = AutovalidateMode.always;
+                });
 
-            return 'This Field Is Required';
-          } else if (widget.type == TextFormFieldTypes.email &&
-              !EmailValidator.validate(widget.controller.text)) {
-            setState(() {
-              _labelColor = Colors.red;
-              _autoValidateMode = AutovalidateMode.always;
-            });
-            return 'Invalid Email';
-          } else if (widget.type == TextFormFieldTypes.password &&
-              value.length < 8) {
-            setState(() {
-              _labelColor = Colors.red;
-              _autoValidateMode = AutovalidateMode.always;
-            });
-            return 'Password must be at least 8 characters';
-          } else if (widget.type == TextFormFieldTypes.name &&
-              value.startsWithCapitalLetter() == false) {
-            setState(() {
-              _labelColor = Colors.red;
-              _autoValidateMode = AutovalidateMode.always;
-            });
-            return 'Name Must Start With Capital Letter';
-          }
+                return 'This Field Is Required';
+              } else if (widget.type == TextFormFieldTypes.email &&
+                  !EmailValidator.validate(widget.controller.text)) {
+                setState(() {
+                  _labelColor = Colors.red;
+                  _autoValidateMode = AutovalidateMode.always;
+                });
+                return 'Invalid Email';
+              } else if (widget.type == TextFormFieldTypes.password &&
+                  value.length < 8) {
+                setState(() {
+                  _labelColor = Colors.red;
+                  _autoValidateMode = AutovalidateMode.always;
+                });
+                return 'Password must be at least 8 characters';
+              } else if (widget.type == TextFormFieldTypes.name &&
+                  value.startsWithCapitalLetter() == false) {
+                setState(() {
+                  _labelColor = Colors.red;
+                  _autoValidateMode = AutovalidateMode.always;
+                });
+                return 'Name Must Start With Capital Letter';
+              }
 
-          setState(() {
-            _labelColor = Colors.grey.shade500;
-            _autoValidateMode = AutovalidateMode.always;
-          });
+              setState(() {
+                _labelColor = Colors.grey.shade500;
+                _autoValidateMode = AutovalidateMode.always;
+              });
 
-          return null;
+              return null;
+            },
+          );
         },
         controller: widget.controller,
         autovalidateMode: _autoValidateMode,

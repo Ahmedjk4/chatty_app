@@ -11,11 +11,13 @@ class AppLogo extends StatelessWidget {
       height: 300,
       child: Column(
         children: [
-          Image.asset(
-            'assets/logo.png',
-            width: MediaQuery.of(context).orientation == Orientation.portrait
-                ? 600
-                : 120,
+          Expanded(
+            child: Image.asset(
+              'assets/logo.png',
+              width: MediaQuery.of(context).orientation == Orientation.portrait
+                  ? 600
+                  : 120,
+            ),
           ),
           Text(
             Constants.kAppName,
