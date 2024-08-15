@@ -1,7 +1,7 @@
 
 # Chatty App
 Not a new flutter project,
-
+<a href="https://drive.google.com/file/d/10LMeQYdsBnjBXJ1wI25r-C1HoxbNDBIZ/view?usp=sharing">Download</a>
 ## Building
 
 - Use flutterfire to init firebase in your project or init it manually.
